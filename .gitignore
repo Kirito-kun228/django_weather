@@ -1,0 +1,58 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Django stuff:
+*.log
+*.pot
+*.pyc
+*.sqlite3
+db.sqlite3
+media/
+staticfiles/
+homework_submissions/
+attachments/
+
+# If using SQLite3 as a backup
+*.sqlite3
+
+# Environment variables
+.env
+.env.*
+
+# PyCharm project settings
+.idea/
+
+# VS Code project settings (если вдруг откроешь проект и в VS Code)
+.vscode/
+
+# Virtualenv
+venv/
+ENV/
+env/
+.venv/
+
+# macOS / Windows / Linux system files
+.DS_Store
+Thumbs.db
+
+# Python egg files
+*.egg
+*.egg-info/
+dist/
+build/
+
+# Pip requirement logs
+pip-log.txt
+
+# Coverage reports
+htmlcov/
+.coverage
+.tox/
+.nox/
+
+# Migrations (опционально — если хочешь исключить сгенерированные миграции)
+# ** Не рекомендуется игнорировать миграции в командной работе!
+# */migrations/*.py
+# !*/migrations/__init__.py
