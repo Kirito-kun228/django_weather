@@ -4,14 +4,14 @@ services:
   web:
     build: .
     ports:
-      - "8080:8000"
+      - "8000:8000"
     volumes:
       - .:/app
     environment:
       - DEBUG=True
     command: >
         sh -c "python manage.py migrate &&
-        gunicorn django_weather.wsgi:application 0.0.0.0:8000"
+        python manage.py runserver 0.0.0.0:8000"
     depends_on:
       - db
 
