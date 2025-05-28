@@ -13,8 +13,8 @@
 Как запустить проект(2 способа):
 
 1. Клонировать репозиторий
-git clone https://github.com/yourusername/weather-django-app.git
-cd weather-django-app
+   git clone https://github.com/yourusername/weather-django-app.git
+   cd weather-django-app
 2. установить reuirements.txt
 3. поменять настройки базы данных в settings.py с db на localhost
 4. запустить сервис погоды
