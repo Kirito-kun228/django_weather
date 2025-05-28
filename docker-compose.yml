@@ -9,11 +9,11 @@ services:
       - .:/app
     environment:
       - DEBUG=True
-    depends_on:
-      - db
     command: >
         sh -c "python manage.py migrate &&
-        python manage.py runserver 0.0.0.0:8000"
+        gunicorn django_weather.wsgi:application 0.0.0.0:8000"
+    depends_on:
+      - db
 
 
   db:
