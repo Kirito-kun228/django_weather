@@ -10,20 +10,10 @@
 - База данных: PostgreSQL
 - Контейнеризация: Docker, Docker Compose
 
-Как запустить проект(2 способа):
+Как запустить проект:
 
 1. Клонировать репозиторий
-   git clone https://github.com/yourusername/weather-django-app.git
-   cd weather-django-app
-2. установить reuirements.txt
-3. поменять настройки базы данных в settings.py с db на localhost
-4. запустить сервис погоды
-
-второй способ:
-1. Убедитесь, что у вас установлен Docker и Docker Compose.
-2. В терминале выполните:
-bashdocker pull kiritokun1337/django_weather
-docker run -d -p 8000:8000 kiritokun1337/django_weather
-3. Откройте сайт в браузере:
-http://localhost:8000/
+   git clone https://github.com/Kirito-kun228/django_weather
+2. переходим в папку проекта командой cd django_weather
+3. создаем и запускаем наш проект docker-compose up --build
 
