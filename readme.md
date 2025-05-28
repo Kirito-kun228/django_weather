@@ -24,6 +24,6 @@
 2. В терминале выполните:
 bashdocker pull your-dockerhub-username/weather-app
 docker run -d -p 8000:8000 your-dockerhub-username/weather-app
-3️. Откройте сайт в браузере:
+3. Откройте сайт в браузере:
 http://localhost:8000/
 
