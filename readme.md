@@ -22,8 +22,8 @@
 второй способ:
 1. Убедитесь, что у вас установлен Docker и Docker Compose.
 2. В терминале выполните:
-bashdocker pull your-dockerhub-username/weather-app
-docker run -d -p 8000:8000 your-dockerhub-username/weather-app
+bashdocker pull kiritokun1337/django_weather
+docker run -d -p 8000:8000 kiritokun1337/django_weather
 3. Откройте сайт в браузере:
 http://localhost:8000/
 
