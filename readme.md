@@ -20,8 +20,8 @@
 4. запустить сервис погоды
 
 второй способ:
-1.Убедитесь, что у вас установлен Docker и Docker Compose.
-2️. В терминале выполните:
+1. Убедитесь, что у вас установлен Docker и Docker Compose.
+2. В терминале выполните:
 bashdocker pull your-dockerhub-username/weather-app
 docker run -d -p 8000:8000 your-dockerhub-username/weather-app
 3️. Откройте сайт в браузере:
