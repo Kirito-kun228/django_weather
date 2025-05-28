@@ -1,10 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>{{ title }}</title>
+    <title>{{ title }} {{ city }}</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
-<body>
+<body class="bg-light">
+<div class="container mt-5">
+    <h1 class="mb-4 text-center">Прогноз погоды в {{ city }}</h1>
 
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Время</th>
+                <th>Температура (°C)</th>
+                <th>Вероятность осадков</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for item in weather.forecast %}
+            <tr>
+                <td>{{ item.time }}</td>
+                <td>{{ item.temperature }}</td>
+                <td>{{ item.precip_probs }}%</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <div class="text-center mt-4">
+        <a href="{% url 'weather:index' %}" class="btn btn-secondary">Назад</a>
+    </div>
+</div>
 </body>
 </html>
